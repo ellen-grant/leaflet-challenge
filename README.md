@@ -4,6 +4,8 @@ The map displays recent earthquake events with markers that are sized based on m
   The tool provides users with an interactive way to explore real-time earthquake data, raising awareness of seismic activity worldwide.
 
 ## Project Overview
+![1-Logo](https://github.com/user-attachments/assets/5c4723c0-44c2-4f1c-bd83-439fb5e75dfd)
+
   The United States Geological Survey (USGS) provides scientific data about natural hazards, ecosystems, climate impacts,
 and land-use changes. With a large amount of earthquake data collected globally each day, USGS needs a meaningful way to visualize this data for public education and decision-making.
   This project aims to solve that by visualizing real-time earthquake data from USGS on an interactive map.
@@ -11,6 +13,8 @@ The tool is designed to make earthquake data more accessible and visually intuit
 support disaster preparedness, and potentially secure funding for further research and prevention initiatives.
 
 ## Features
+![2-BasicMap](https://github.com/user-attachments/assets/7aee7097-7dd4-4e04-86f9-0946e22b996e)
+
 - Real-time Earthquake Data: Data is fetched from the USGS GeoJSON feed, which updates every 5 minutes.
 - Marker Visualization:
 - Size: Based on earthquake magnitude.
