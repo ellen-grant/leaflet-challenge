@@ -13,7 +13,8 @@ The tool is designed to make earthquake data more accessible and visually intuit
 support disaster preparedness, and potentially secure funding for further research and prevention initiatives.
 
 ## Features
-![2-BasicMap](https://github.com/user-attachments/assets/7aee7097-7dd4-4e04-86f9-0946e22b996e)
+![Map](https://github.com/user-attachments/assets/ff9e0e1a-37b8-404d-bab7-d92383f1ed55)
+
 
 - Real-time Earthquake Data: Data is fetched from the USGS GeoJSON feed, which updates every 5 minutes.
 - Marker Visualization:
@@ -31,6 +32,7 @@ The map fetches earthquake data using the USGS GeoJSON feed:
 const earthquakeUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
 d3.json(earthquakeUrl).then(function(data) { plotEarthquakes(data.features);
 });
+
 ![4-JSON](https://github.com/user-attachments/assets/24f5a381-9696-40a2-be82-d985ff4dde10)
 
 2. Marker Creation:
@@ -41,3 +43,34 @@ The color of each marker is determined by the depth of the earthquake, using a r
 color scale.
 4. Legend: A color-coded legend is added to the bottom-right corner of the map to provide context for the
 depth color scale.
+
+## Setup Instructions
+
+### 1. Clone the Repository
+To get started, clone the repository to your local machine:
+git clone https://github.com/your-username/earthquake-visualization.git 
+cd earthquake-visualization
+
+### 2. Add Dependencies
+Include the following CDN links in your index.html file:
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"> <!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<!-- D3.js -->
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+### 3. Run the Project
+Open the index.html file in your browser to visualize the earthquake data.
+
+## Limitations
+- Data Latency: There may be a slight delay between the occurrence of an earthquake and its appearance on the map due to the update frequency of the USGS feed.
+- Real-time Data Only: This map only visualizes recent earthquake data (up to one week). It does not include historical data.
+- Rendering Performance: Large datasets might affect performance when rendering too many markers at once.
+
+## Potential Uses
+- Risk Assessment: Government agencies and planners can use this tool to identify earthquake-prone regions and prepare accordingly.
+- Educational Tool: Teachers and educators can use this map to teach students about seismic activity, earthquake distribution, and geology.
+- Public Awareness: This tool can help raise awareness among the general public about ongoing seismic activity worldwide.
+
+## References:
+Dataset created by the United States Geological Survey (http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php)
