@@ -13,7 +13,8 @@ The tool is designed to make earthquake data more accessible and visually intuit
 support disaster preparedness, and potentially secure funding for further research and prevention initiatives.
 
 ## Features
-![Map](https://github.com/user-attachments/assets/ff9e0e1a-37b8-404d-bab7-d92383f1ed55)
+![Map](https://github.com/user-attachments/assets/ef0dcd1c-a1a1-4e1a-823e-25010fd071b5)
+
 
 
 - Real-time Earthquake Data: Data is fetched from the USGS GeoJSON feed, which updates every 5 minutes.
