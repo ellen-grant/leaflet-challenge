@@ -24,6 +24,8 @@ support disaster preparedness, and potentially secure funding for further resear
 
 ## How It Works
 1. Earthquake Data Fetching:
+![3-Data](https://github.com/user-attachments/assets/d7936e0e-d7d6-4496-bd60-1832b69ceb71)
+
 The map fetches earthquake data using the USGS GeoJSON feed:
 
 const earthquakeUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
