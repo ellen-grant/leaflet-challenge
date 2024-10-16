@@ -31,6 +31,7 @@ The map fetches earthquake data using the USGS GeoJSON feed:
 const earthquakeUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
 d3.json(earthquakeUrl).then(function(data) { plotEarthquakes(data.features);
 });
+![4-JSON](https://github.com/user-attachments/assets/24f5a381-9696-40a2-be82-d985ff4dde10)
 
 2. Marker Creation:
 The earthquake data is parsed to create circle markers. The size of each marker is proportional to
